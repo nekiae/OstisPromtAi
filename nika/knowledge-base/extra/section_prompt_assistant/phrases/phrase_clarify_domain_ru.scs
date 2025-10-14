@@ -1,0 +1,8 @@
+concept_clarify_domain_phrase <- sc_node_class;;
+=> nrel_main_idtf: [фразы: уточнить домен] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_phrase;;
+
+-> [О какой предметной области речь (например, медицина, лингвистика, физика)?]
+	(* <- lang_ru;; *) <- concept_clarify_domain_phrase;;
+-> [Уточните домен, чтобы сузить контекст промта.]
+	(* <- lang_ru;; *) <- concept_clarify_domain_phrase;;

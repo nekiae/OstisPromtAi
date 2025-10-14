@@ -1,0 +1,7 @@
+test_dialog_missing_task = [*
+    _m <- concept_generate_prompt_message;;
+    _m => nrel_wit_ai_idtf: [generate_prompt];;
+    _m -> nrel_role: role_doctor;;
+    _m -> nrel_domain: domain_medicine;;
+    _expected_answer = { rrel_1: concept_clarify_task_phrase };;
+*];;

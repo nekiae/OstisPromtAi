@@ -1,0 +1,4 @@
+section_prompt_assistant
+<- atomic_section;;
+=> nrel_main_idtf: [Раздел. Помощник по генерации промтов] (* <- lang_ru;; *);
+=> nrel_definition: [Мини-раздел БЗ для диалоговой логики генерации промтов по интенту generate_prompt. Слоты: ROLE/DOMAIN/TASK. Приоритет добора: TASK → DOMAIN → ROLE. Расширение: добавить сущности TONE/OUTPUT_FORMAT, мультиязычность, нормализацию синонимов.] (* <- lang_ru;; *);;

@@ -1,0 +1,11 @@
+concept_message_without_task <- sc_node_class;;
+=> nrel_main_idtf: [сообщение без задачи] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_message;;
+
+concept_message_without_domain <- sc_node_class;;
+=> nrel_main_idtf: [сообщение без домена] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_message;;
+
+concept_message_without_role <- sc_node_class;;
+=> nrel_main_idtf: [сообщение без роли] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_message;;

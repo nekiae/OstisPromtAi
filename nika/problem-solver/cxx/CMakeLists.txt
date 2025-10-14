@@ -1,0 +1,7 @@
+add_subdirectory(common-module)
+add_subdirectory(non-atomic-action-interpreter-module)
+add_subdirectory(message-reply-module)
+add_subdirectory(dialog-control-module)
+add_subdirectory(message-classification-module)
+add_subdirectory(interface-module)
+add_subdirectory(message-processing-module)

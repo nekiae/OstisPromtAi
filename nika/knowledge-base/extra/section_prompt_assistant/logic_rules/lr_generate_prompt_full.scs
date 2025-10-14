@@ -1,0 +1,30 @@
+@if = [* 
+	_message 
+		<-_ concept_message;
+		<-_ concept_generate_prompt_message;
+		_=> nrel_role:: _role;;
+		_=> nrel_domain:: _domain;;
+		_=> nrel_task:: _task;;
+*];;
+
+@then = [* 
+	_message _=> nrel_reply:: _reply_message;;
+	_reply_message
+		<-_ concept_generate_prompt_message;
+		<-_ concept_atomic_message;;
+	_reply_message => nrel_answer_var_role_name: _role;;
+	_reply_message => nrel_answer_var_domain_name: _domain;;
+	_reply_message => nrel_answer_var_task_text: _task;;
+*];;
+
+lr_generate_prompt_full
+<- concept_answer_on_standard_message_rule;
+<- concept_answer_on_standard_message_rule_priority_1;
+=> nrel_answer_pattern:
+	{ rrel_1: concept_generate_prompt_phrase_full };
+<- rrel_main_key_sc_element: (@if => @then)
+	(* <- nrel_implication;; *);;
+
+atomic_logical_formula
+-> @if;
+-> @then;;

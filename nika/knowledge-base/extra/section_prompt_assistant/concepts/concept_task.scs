@@ -1,0 +1,3 @@
+concept_task
+<- sc_node_class;;
+=> nrel_main_idtf: [тип задачи] (* <- lang_ru;; *);;

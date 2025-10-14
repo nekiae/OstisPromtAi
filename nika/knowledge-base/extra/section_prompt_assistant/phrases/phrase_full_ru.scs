@@ -1,0 +1,43 @@
+@pattern_full = [* 
+	_m <-_ concept_message;
+	_m <-_ concept_generate_prompt_message;
+	_m _-> nrel_role:: _role;;
+	_m _-> nrel_domain:: _domain;;
+	_m _-> nrel_task:: _task;;
+	_role _=> nrel_main_idtf: [ ]
+		(*
+			=> nrel_main_idtf: [_role_name];;
+			<-_ lang_ru;;
+		*);;
+	_domain _=> nrel_main_idtf: [ ]
+		(*
+			=> nrel_main_idtf: [_domain_name];;
+			<-_ lang_ru;;
+		*);;
+	_task _=> nrel_main_idtf: [ ]
+		(*
+			=> nrel_main_idtf: [_task_text];;
+			<-_ lang_ru;;
+		*);;
+*];;
+
+concept_generate_prompt_phrase_full <- sc_node_class;;
+=> nrel_main_idtf: [фразы: полный ответ (генерация промта)] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_phrase;;
+
+-> [Готов сгенерировать промт для ${_role_name} по ${_domain_name}. Задача: ${_task_text}.]
+	(* <- lang_ru;; *);;
+-> [Принял: роль — ${_role_name}, домен — ${_domain_name}, цель — ${_task_text}. Формирую сильный промт.]
+	(* <- lang_ru;; *);;
+-> [Сделаю промт под ${_role_name} в области ${_domain_name}; фокус задачи — ${_task_text}.]
+	(* <- lang_ru;; *);;
+-> [Ок. Сформирую промт: ${_task_text}, контекст — ${_domain_name}, аудитория — ${_role_name}.]
+	(* <- lang_ru;; *);;
+-> [Соберу промт для ${_role_name} по ${_domain_name}. Цель: ${_task_text}.]
+	(* <- lang_ru;; *);;
+-> [Подтверждаю: ${_role_name}, ${_domain_name}, ${_task_text}. Перехожу к формированию промта.]
+	(* <- lang_ru;; *);;
+-> [Понял задачу — ${_task_text} для ${_role_name} (${_domain_name}). Приступаю к генерации промта.]
+	(* <- lang_ru;; *);;
+
+concept_generate_prompt_phrase_full => nrel_phrase_template: @pattern_full;;

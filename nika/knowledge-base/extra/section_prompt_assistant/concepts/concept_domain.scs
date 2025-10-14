@@ -1,0 +1,3 @@
+concept_domain
+<- sc_node_class;;
+=> nrel_main_idtf: [предметная область] (* <- lang_ru;; *);;

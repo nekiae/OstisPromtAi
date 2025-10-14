@@ -1,0 +1,6 @@
+nrel_role
+<- sc_node_non_role_relation;;
+=> nrel_main_idtf: [роль*] (* <- lang_ru;; *);;
+<- relation;;
+<- binary_relation;;
+<- oriented_relation;;

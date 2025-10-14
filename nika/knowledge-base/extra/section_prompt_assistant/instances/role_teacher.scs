@@ -1,0 +1,2 @@
+role_teacher <- concept_role;;
+=> nrel_main_idtf: [Учитель] (* <- lang_ru;; *);;

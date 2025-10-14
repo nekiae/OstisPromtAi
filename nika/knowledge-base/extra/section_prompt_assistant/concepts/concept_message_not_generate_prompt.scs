@@ -1,0 +1,3 @@
+concept_message_not_generate_prompt <- sc_node_class;;
+=> nrel_main_idtf: [сообщение без интента generate_prompt] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_message;;

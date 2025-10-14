@@ -1,0 +1,9 @@
+# Change start page
+!knowledge-base/ims.ostis.kb/ui/ui_start_sc_element.scs
+!knowledge-base/ims.ostis.kb/ims/knowledge_base_IMS.scs
+
+# Do not build examples
+!knowledge-base/pattern
+
+#components
+knowledge-base

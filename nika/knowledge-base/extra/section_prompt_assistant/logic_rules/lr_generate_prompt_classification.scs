@@ -1,0 +1,22 @@
+if_generate_prompt_intent = [*
+	_message <-_ concept_message;;
+	_message _=> nrel_wit_ai_idtf:: ..intent_link;;
+	@intent = _[generate_prompt];;
+	..intent_link -> @intent;;
+*];;
+
+then_mark_generate_prompt_message = [*
+	concept_generate_prompt_message _-> _message;;
+*];;
+
+lr_generate_prompt_classification
+<- concept_classify_message_rule_priority_1;
+<- rrel_main_key_sc_element: (if_generate_prompt_intent => then_mark_generate_prompt_message)
+	(* <- nrel_implication;; *);;
+
+atomic_logical_formula
+-> if_generate_prompt_intent;
+-> then_mark_generate_prompt_message;;
+
+concept_template_with_links
+-> if_generate_prompt_intent;;

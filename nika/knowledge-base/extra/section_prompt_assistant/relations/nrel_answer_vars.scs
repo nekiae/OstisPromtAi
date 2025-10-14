@@ -1,0 +1,8 @@
+nrel_answer_var_role_name <- sc_node_norole_relation;;
+=> nrel_main_idtf: [переменная ответа: имя роли] (* <- lang_ru;; *);;
+
+nrel_answer_var_domain_name <- sc_node_norole_relation;;
+=> nrel_main_idtf: [переменная ответа: имя домена] (* <- lang_ru;; *);;
+
+nrel_answer_var_task_text <- sc_node_norole_relation;;
+=> nrel_main_idtf: [переменная ответа: текст задачи] (* <- lang_ru;; *);;

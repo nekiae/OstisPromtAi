@@ -1,0 +1,9 @@
+test_dialog_happy_path = [*
+    _m <- concept_generate_prompt_message;;
+    _m => nrel_wit_ai_idtf: [generate_prompt];;
+    _m -> nrel_role: role_doctor;;
+    _m -> nrel_domain: domain_medicine;;
+    _task_node => nrel_main_idtf: [составить план лекции] (* <- lang_ru;; *);;
+    _m -> nrel_task: _task_node;;
+    _expected_answer = { rrel_1: concept_generate_prompt_phrase_full };;
+*];;

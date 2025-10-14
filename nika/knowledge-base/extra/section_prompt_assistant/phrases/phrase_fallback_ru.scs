@@ -1,0 +1,6 @@
+concept_fallback_phrase <- sc_node_class;;
+=> nrel_main_idtf: [фразы: фоллбэк] (* <- lang_ru;; *);;
+<= nrel_inclusion: concept_phrase;;
+
+-> [Не уверен, что правильно понял запрос. Уточните роль/домен/задачу или переформулируйте, пожалуйста.]
+	(* <- lang_ru;; *) <- concept_fallback_phrase;;

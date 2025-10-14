@@ -1,0 +1,8 @@
+test_dialog_missing_role = [*
+    _m <- concept_generate_prompt_message;;
+    _m => nrel_wit_ai_idtf: [generate_prompt];;
+    _m -> nrel_domain: domain_physics;;
+    _task_node => nrel_main_idtf: [составить план лекции] (* <- lang_ru;; *);;
+    _m -> nrel_task: _task_node;;
+    _expected_answer = { rrel_1: concept_clarify_role_phrase };;
+*];;

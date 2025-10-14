@@ -1,0 +1,2 @@
+role_doctor <- concept_role;;
+=> nrel_main_idtf: [Врач] (* <- lang_ru;; *);;
