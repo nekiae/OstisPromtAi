@@ -1,7 +1,7 @@
 nrel_role
-<- sc_node_non_role_relation;;
+nrel_role <- sc_node_non_role_relation;;
 nrel_role => nrel_main_idtf: [роль*] (* <- lang_ru;; *);;
 nrel_role => nrel_wit_ai_idtf: [rrel_role];;
-<- relation;;
-<- binary_relation;;
-<- oriented_relation;;
+nrel_role <- relation;;
+nrel_role <- binary_relation;;
+nrel_role <- oriented_relation;;

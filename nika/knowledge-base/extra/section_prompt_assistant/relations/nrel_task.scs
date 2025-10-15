@@ -2,6 +2,6 @@ nrel_task
 <- sc_node_non_role_relation;;
 nrel_task => nrel_main_idtf: [задача*] (* <- lang_ru;; *);;
 nrel_task => nrel_wit_ai_idtf: [rrel_task];;
-<- relation;;
-<- binary_relation;;
-<- oriented_relation;;
+nrel_task <- relation;;
+nrel_task <- binary_relation;;
+nrel_task <- oriented_relation;;
