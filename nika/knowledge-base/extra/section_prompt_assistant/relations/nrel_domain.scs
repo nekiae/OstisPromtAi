@@ -1,7 +1,6 @@
-nrel_domain
-<- sc_node_non_role_relation;
-=> nrel_main_idtf: [домен*] (* <- lang_ru;; *);;
-=> nrel_wit_ai_idtf: [rrel_domain];;
-<- relation;
-<- binary_relation;
-<- oriented_relation;
+nrel_domain => nrel_main_idtf: [домен*] (* <- lang_ru;; *);;
+nrel_domain <- sc_node_non_role_relation;;
+nrel_domain => nrel_wit_ai_idtf: [rrel_domain];;
+nrel_domain <- relation;;
+nrel_domain <- binary_relation;;
+nrel_domain <- oriented_relation;;
