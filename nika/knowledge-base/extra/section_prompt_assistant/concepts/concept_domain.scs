@@ -1,3 +1,4 @@
 concept_domain
 <- sc_node_class;;
 => nrel_main_idtf: [предметная область] (* <- lang_ru;; *);;
+=> nrel_wit_ai_idtf: [rrel_domain];;
