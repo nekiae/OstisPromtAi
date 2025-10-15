@@ -1,0 +1,11 @@
+ROLE
+<- sc_node_role_relation;
+=> nrel_wit_ai_idtf: [ROLE];;
+
+DOMAIN
+<- sc_node_role_relation;
+=> nrel_wit_ai_idtf: [DOMAIN];;
+
+TASK
+<- sc_node_role_relation;
+=> nrel_wit_ai_idtf: [TASK];;

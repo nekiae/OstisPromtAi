@@ -1,0 +1,3 @@
+rrel_task_entity_role
+<- sc_node_role_relation;
+=> nrel_wit_ai_idtf: [TASK];;

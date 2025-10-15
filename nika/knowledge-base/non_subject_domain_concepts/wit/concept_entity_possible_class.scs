@@ -28,4 +28,7 @@ concept_entity_possible_class
 			(* <- lang_en;; *);;
 		*);;
 	*);
--> concept_wit_entity;;
+-> concept_wit_entity;
+-> concept_role;
+-> concept_domain;
+-> concept_task;;

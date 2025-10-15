@@ -2,3 +2,4 @@ concept_role
 <- sc_node_class;;
 => nrel_main_idtf: [роль] (* <- lang_ru;; *);;
 => nrel_wit_ai_idtf: [rrel_role];;
+=> nrel_entity_possible_role: { rrel_role_entity_role };;
